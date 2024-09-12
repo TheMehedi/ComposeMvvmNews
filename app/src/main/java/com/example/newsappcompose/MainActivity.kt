@@ -25,3 +25,9 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+
+@Composable
+fun NewsAppComposeEntryPoint() {
+
+
+}
