@@ -15,4 +15,5 @@ object Versions {
   const val lifecycleViewModelCompose = "2.8.5"
   const val hilt = "2.51.1"
   const val hiltCompiler = "1.2.0"
+  const val hiltNavigationCompose = "1.2.0"
 }
