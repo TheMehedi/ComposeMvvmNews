@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    kotlin("kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -62,4 +64,16 @@ dependencies {
 
     //to use utilities module inside app module
     implementation(project(Modules.utilities))
+
+
+    //hilt
+    implementation(Dependencies.hiltAndroid)
+    kapt(Dependencies.hiltCompiler)
+    kapt(Dependencies.hiltAndroidCompiler)
+
+    implementation(Dependencies.hiltNavigationCompose)
+}
+
+kapt {
+    correctErrorTypes = true
 }

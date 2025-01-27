@@ -8,7 +8,7 @@ there would cause no conflict.*/
 object Dependencies {
 
   val coreKtx by lazy { "androidx.core:core-ktx:${Versions.coreKtx}" }
-  val appCompat by lazy { "androidx.appCompat:appCompat:${Versions.appCompat}" }
+  val appCompat by lazy { "androidx.appcompat:appcompat:${Versions.appCompat}" }
   val material by lazy { "com.google.android.material:material:${Versions.material}" }
   val lifecycleRuntimeKtx by lazy { "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycleRuntimeKtx}" }
   val activityCompose by lazy { "androidx.activity:activity-compose:${Versions.activityCompose}" }
@@ -22,4 +22,10 @@ object Dependencies {
   val composeUiTooling by lazy { "androidx.compose.ui:ui-tooling:${Versions.compose}" }
   val composeUiTestManifest by lazy { "androidx.compose.ui:ui-test-manifest:${Versions.compose}" }
   val lifecycleViewModelCompose by lazy { "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycleViewModelCompose}" }
+
+  val hiltAndroid by lazy { "com.google.dagger:hilt-android:${Versions.hilt}" }
+  val hiltAndroidCompiler by lazy { "com.google.dagger:hilt-android-compiler:${Versions.hilt}" }
+  val hiltCompiler by lazy { "androidx.hilt:hilt-compiler:${Versions.hiltCompiler}" }
+
+   val hiltNavigationCompose by lazy { "androidx.hilt:hilt-navigation-compose:${Versions.hiltNavigationCompose}" }
 }
